@@ -1,18 +1,18 @@
 {
   "todos": [
     {
-      "id": 1,
-      "title": "json-server",
-      "status": "pending"
+      "title": "java",
+      "status": false,
+      "id": 1
     },
     {
-      "title": "todo2",
-      "status": "pending",
+      "title": "html",
+      "status": true,
       "id": 2
     },
     {
-      "title": "todo-3",
-      "status": "pending",
+      "title": "css",
+      "status": true,
       "id": 3
     }
   ]

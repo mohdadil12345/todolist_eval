@@ -32,6 +32,10 @@ deleteTodo(id : any)  {
 
 }
 
+// toggle
 
+updt_status(id: any, newStatus: boolean) {
+  return this.http.patch(`${this.url}/${id}`, { status: newStatus });
+}
 
 }

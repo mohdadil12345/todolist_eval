@@ -10,7 +10,7 @@ import { TodoServiceService } from './service/todo-service.service';
 export class AppComponent {
 
   title: string = '';
-
+  completed : string = ""
 
   users: any;
   todoArray : any
@@ -70,6 +70,21 @@ handle_delete(id : any) {
     this.todoArray = this.todoArray.filter((item: any) => item.id !== id);
    })
 }
+
+
+
+// togllle  
+update_btn(id: any) {
+  const updt = this.todoArray.find((ele: any) => ele.id === id);
+  if (updt) {
+    const newStatus = !updt.status;
+    this.servc.updt_status(id, newStatus).subscribe(() => {
+      updt.status = newStatus;
+      this.todoArray = [...this.todoArray];
+    });
+  }
+}
+
 
 
  
