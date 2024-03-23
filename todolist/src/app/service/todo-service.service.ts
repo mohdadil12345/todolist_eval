@@ -17,6 +17,14 @@ postInputData(data : any) {
 }
 
 
+//  get
+
+getTodoData()  {
+  return this.http.get(this.url)
+}
+
+
+
 
 
 }

@@ -13,6 +13,7 @@ export class AppComponent {
 
 
   users: any;
+  todoArray : any
 
   constructor(private servc: TodoServiceService) {}
 
@@ -30,25 +31,33 @@ export class AppComponent {
 
   // post
 
-this.servc.postInputData(this.users).subscribe((data) => {
-  alert('added data');
-  console.log('data', data);
-})
+    this.servc.postInputData(this.users).subscribe((data) => {
+      alert('added data');
+      console.log('data', data);
+      this.getAllusers()
+    })
 
-
-  // this.servc.postFormData(this.users).subscribe((data) => {
-  //   alert('added data');
-  //   console.log('data', data);
-
-  //    ele.resetForm()
-
-  // });
 
 
   }
 
 
 
+
+  // getData   getTodoData
+
+  getAllusers() {
+
+    this.servc.getTodoData().subscribe(data => {
+        console.log("getData", data)
+        this.todoArray = data
+   })
+
+
+   }
+   ngOnInit() {
+    this.getAllusers()
+  }
 
 
  

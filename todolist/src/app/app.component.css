@@ -11,6 +11,7 @@
     padding: 20px;
     margin: 30px auto;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border: 1px solid grey;
 
 }
 
@@ -28,4 +29,28 @@ button{
     color: white;
     border-radius: 4px;
     cursor: pointer;
+}
+
+
+.todooos{
+
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    gap: 10px;
+    justify-content: center;
+    gap: 10px;
+    
+
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    border-radius: 4px;
+    justify-content: center;
+   align-items: center;
+
 }
