@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,17 @@ import { Injectable } from '@angular/core';
 })
 export class TodoServiceService {
 
-  constructor() { }
+  constructor( private http : HttpClient) { }
+
+  url = "http://localhost:3000/todos"
+
+// post
+
+postInputData(data : any) {
+  return this.http.post(this.url,  data)
+}
+
+
+
+
 }

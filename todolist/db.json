@@ -1,0 +1,17 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "status": "completed"
+    },
+    {
+      "title": "mohd adil",
+      "id": 2
+    },
+    {
+      "title": "html",
+      "id": 3
+    }
+  ]
+}
