@@ -24,6 +24,7 @@ export class AppComponent {
 
   this.users = {
     title: ele.value.title,
+    status : "pending"
 
   };
 
@@ -32,7 +33,7 @@ export class AppComponent {
   // post
 
     this.servc.postInputData(this.users).subscribe((data) => {
-      alert('added data');
+      alert('added todos');
       console.log('data', data);
       this.getAllusers()
     })
@@ -58,6 +59,17 @@ export class AppComponent {
    ngOnInit() {
     this.getAllusers()
   }
+
+
+
+// delete 
+
+handle_delete(id : any) {
+   alert(`todo with id ${id} deleted`)
+   this.servc.deleteTodo(id).subscribe(data => {
+    this.todoArray = this.todoArray.filter((item: any) => item.id !== id);
+   })
+}
 
 
  

@@ -19,7 +19,7 @@
 <div class="todooos">
   <div  *ngFor="let ele of todoArray" class="items">
       <h3>Title : {{ele.title}}</h3>
-      <p>id : {{ele.id}}</p>
-      <p>ststus : {{ele.status}}</p>
+      <p>status : {{ele.status}}</p>
+      <button (click)="handle_delete(ele.id)">DELETE</button>
   </div>
 </div>

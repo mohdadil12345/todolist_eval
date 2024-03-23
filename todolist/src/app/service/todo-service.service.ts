@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class TodoServiceService {
 
-  constructor( private http : HttpClient) { }
+  constructor( private http : HttpClient ) { }
 
   url = "http://localhost:3000/todos"
 
@@ -24,6 +24,13 @@ getTodoData()  {
 }
 
 
+
+//  get
+
+deleteTodo(id : any)  {
+  return this.http.delete(`${this.url}/${id}`)
+
+}
 
 
 

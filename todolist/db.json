@@ -3,31 +3,17 @@
     {
       "id": 1,
       "title": "json-server",
-      "status": "completed"
+      "status": "pending"
     },
     {
-      "title": "mohd adil",
+      "title": "todo2",
+      "status": "pending",
       "id": 2
     },
     {
-      "title": "html",
+      "title": "todo-3",
+      "status": "pending",
       "id": 3
-    },
-    {
-      "title": "mohhhh",
-      "id": 4
-    },
-    {
-      "title": "sdfsfsd",
-      "id": 5
-    },
-    {
-      "title": "sdfsfsdsdfdsfdsf",
-      "id": 6
-    },
-    {
-      "title": "dfgfdgf",
-      "id": 7
     }
   ]
 }
